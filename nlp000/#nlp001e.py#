@@ -1,0 +1,5 @@
+# -*- coding: utf-8 -*-
+str = '’¥Ñ’¥¿’¥È’¥¯’¥«’¥·’¡¼’¡¼'
+
+result = str[0:7:2]
+print(result)

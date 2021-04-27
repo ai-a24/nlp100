@@ -1,0 +1,4 @@
+str = 'stressed'
+
+result = [::-1]
+print(result)

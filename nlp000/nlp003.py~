@@ -1,0 +1,18 @@
+import re
+
+str = "Now I need a drink, alcoholic of course, after the heavy lectures involving quantum mechanics."
+
+print(str)
+
+#print(str.split())
+
+result = re.findall(r'[a-zA-Z]+', str)
+
+#print(result)
+str2 = ''
+
+for name in result:
+    str2 += len(name) 
+    #print(len(name))
+
+print(str2)
