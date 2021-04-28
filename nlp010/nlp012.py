@@ -25,15 +25,15 @@ lines = list(filter(lambda line: line != '', lines))
 
 #cal1 = list(map(func, lines))
 
-cal1 = list(map(lambda line: line.split('\t')[0], lines))
-cal2 = list(map(lambda line: line.split('\t')[1], lines))
+col1 = list(map(lambda line: line.split('\t')[0], lines))
+col2 = list(map(lambda line: line.split('\t')[1], lines))
 
-re_cal1 = "\n".join(cal1) + "\n"
-re_cal2 = "\n".join(cal2) + "\n"
+re_col1 = "\n".join(col1) + "\n"
+re_col2 = "\n".join(col2) + "\n"
 """
-print(re_cal1)
+print(re_col1)
 print("\n")
-print(re_cal2)
+print(re_col2)
 """
-save_file('cal1.txt', re_cal1)
-save_file('cal2.txt', re_cal2)
+save_file('col1.txt', re_col1)
+save_file('col2.txt', re_col2)

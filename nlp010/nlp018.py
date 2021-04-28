@@ -15,7 +15,7 @@ with open('hightemp.txt', 'r') as file:
 
 with open(sys.argv[1], 'r') as file:
     lines = file.read().split('\n')
-    print(lines)
+    #print(lines)
 
 lines = list(filter(lambda line: line != '', lines))
 #print(lines)
@@ -24,9 +24,9 @@ lines = list(filter(lambda line: line != '', lines))
 
 lines = list(map(lambda line: line.split('\t'), lines))
 
-print(lines)
+#print(lines)
 
-lines = sorted(lines, key=lambda x: x[2], reverse=False)
+lines = sorted(lines, key=lambda x: float(x[2]), reverse=False)
 
 lines = list(map(lambda line: "\t".join(line), lines))
 

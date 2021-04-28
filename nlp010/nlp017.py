@@ -22,6 +22,6 @@ lines = list(filter(lambda line: line != '', lines))
 
 #cal1 = list(map(func, lines))
 
-cal1 = set(map(lambda line: line.split('\t')[0].strip(), lines))
+col1 = set(map(lambda line: line.split('\t')[0].strip(), lines))
 
-print("\n".join(cal1))
+print("\n".join(col1))

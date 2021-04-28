@@ -27,10 +27,10 @@ lines = list(filter(lambda line: line != '', lines))
 lines = list(map(lambda line: line.split('\t'), lines))
 
 #print(lines)
-cal1 = list(map(lambda line: line[0].strip(), lines))
+col1 = list(map(lambda line: line[0].strip(), lines))
 
 #print(Counter(cal1).most_common())
 
-result = list(map(lambda x: f"{x[0]}\t{x[1]}", Counter(cal1).most_common()))
+result = list(map(lambda x: f"{x[0]}\t{x[1]}", Counter(col1).most_common()))
 
 print("\n".join(result)) 
