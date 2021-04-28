@@ -46,7 +46,7 @@ for line in text:
         result = getTemplate(line)
         #print(result)
         result = removeEmp(result)
-        print(result)
+        #print(result)
         result = removeInLink(result)
         print(result)
                 
