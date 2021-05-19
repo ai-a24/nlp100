@@ -1,4 +1,3 @@
-#未完成
 import matplotlib.pyplot as plt
 import japanize_matplotlib
 
